@@ -1,4 +1,5 @@
 using System.Collections;
+using UniPay;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,6 +13,8 @@ public class ScoreManager : MonoBehaviour
 
 	public Text highScoreGameOverLabel;
 
+	public Text reviveLabel;
+
 	public float currentScore;
 
 	public float highScore;
@@ -23,10 +26,14 @@ public class ScoreManager : MonoBehaviour
 		get;
 		set;
 	}
+    public int reviveCount;
 
-	private void Awake()
+    private void Awake()
 	{
-		Object.DontDestroyOnLoad(this);
+        reviveCount = DBManager.GetCurrency("revive");
+        Debug.Log($"revive:{reviveCount}");
+        reviveLabel.text = reviveCount.ToString();
+        Object.DontDestroyOnLoad(this);
 		if (Instance == null)
 		{
 			Instance = this;
@@ -36,6 +43,20 @@ public class ScoreManager : MonoBehaviour
 			UnityEngine.Object.Destroy(base.gameObject);
 		}
 	}
+
+     void Update()
+    {
+        reviveCount = DBManager.GetCurrency("revive");
+        Debug.Log($"revive:{reviveCount}");
+        reviveLabel.text = reviveCount.ToString();
+    }
+
+    public void ReviveConsum()
+	{
+		reviveCount = reviveCount - 1;
+		DBManager.SetCurrency("revive", reviveCount);
+
+    }	
 
 	private void Start()
 	{
@@ -106,4 +127,5 @@ public class ScoreManager : MonoBehaviour
 		float num = Mathf.Pow(10f, digits);
 		return Mathf.Round(value * num) / num;
 	}
+
 }

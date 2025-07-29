@@ -1,5 +1,7 @@
-using System.Collections;
+﻿using System.Collections;
+using UniPay;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -87,8 +89,13 @@ public class GameManager : MonoBehaviour
 		set;
 	}
 
-	private void Awake()
+	public GameObject notication;
+   // public Button store;
+    public GameObject panelStore;
+
+    private void Awake()
 	{
+	
         Debug.Log("GameAwwaek");
         Object.DontDestroyOnLoad(this);
 		if (Instance == null)
@@ -158,9 +165,23 @@ public class GameManager : MonoBehaviour
 		{
 			obstacle = UnityEngine.Object.Instantiate(obstaclesPrefab);
 			obstacle.transform.position = new Vector3(UnityEngine.Random.Range(leftSide.transform.position.x + leftSide.transform.localScale.x / 2f + 0.75f, rightSide.transform.position.x - rightSide.transform.localScale.x / 2f - 0.75f), screenSize.y + 1f);
-        //    spriteTable = Resources.LoadAll<Sprite>("ObstacleSprite");
-         //   player.GetComponent<SpriteRenderer>().sprite = spriteTable[Random.Range(0, spriteTable.Length)];
-        obstacle.GetComponent<SpriteRenderer>().color = colorTable[Random.Range(0, colorTable.Length)];
+            Sprite[] obstacleSprites = Resources.LoadAll<Sprite>("ObstacleSprite");
+            Sprite[] playerSprites = Resources.LoadAll<Sprite>("PlayerSprite");
+
+            spriteTable = new Sprite[obstacleSprites.Length + playerSprites.Length];
+
+            obstacleSprites.CopyTo(spriteTable, 0);
+            playerSprites.CopyTo(spriteTable, obstacleSprites.Length);
+			
+            Debug.Log("Tổng số sprite: " + spriteTable.Length);
+			int spritePos = Random.Range(0, spriteTable.Length);
+
+			obstacle.GetComponent<SpriteRenderer>().sprite = spriteTable[spritePos];
+			if(spritePos >= spriteTable.Length/2)
+			{
+				obstacle.tag = "Player";
+			}	
+		//	obstacle.GetComponent<SpriteRenderer>().color = colorTable[Random.Range(0, colorTable.Length)];
 			obstacle.GetComponent<Obstacle>().InitOBstacle(UnityEngine.Random.Range(minObstacleSpeed, maxObstacleSpeed), UnityEngine.Random.Range(minAplitude, maxAmplitude), UnityEngine.Random.Range(minLeftRightSpeed, maxLeftRightSpeed));
 			yield return new WaitForSeconds(delayBetweenObstacles);
 		}
@@ -175,7 +196,7 @@ public class GameManager : MonoBehaviour
         player.transform.localScale = new Vector2(minPlayerSize, minPlayerSize);
 		sideXStartPos = screenSize.x + leftSide.transform.localScale.x / 2f;
 		sideXClosePos = leftSide.transform.localScale.x / 2f;
-	//	player.transform.position = new Vector2(0f, -2.5f);
+	//player.transform.position = new Vector2(0f, -2.5f);
 	}
     public void HidePlayer()
     {
@@ -206,6 +227,40 @@ public class GameManager : MonoBehaviour
 		StartCoroutine(SpawnObstacle(delayBetweenObstacles));
 	}
 
+	void ShowNotications()
+	{
+        notication.SetActive(true);
+        CancelInvoke();
+        Invoke("HideNotications", 1f);
+
+    }
+    void HideNotications()
+    {
+        notication.SetActive(false);
+		
+
+    }
+
+    public void ContinueGame()
+	{
+		int reviveCount = DBManager.GetCurrency("revive");
+		if(reviveCount == 0)
+		{
+			ShowNotications();
+
+            return;
+		}	
+        ScoreManager.Instance.ReviveConsum();
+        if (uIManager.gameState == GameState.PAUSED)
+        {
+            Time.timeScale = 1f;
+        }
+		ShowPlayer();
+        spawning = true;
+        uIManager.ShowGameplay();
+        StartCoroutine(SpawnObstacle(delayBetweenObstacles));
+
+    }	
 	public void SetSides()
 	{
 		leftSide.transform.localScale = new Vector2(screenSize.x, 2f * screenSize.y);
@@ -265,4 +320,15 @@ public class GameManager : MonoBehaviour
 			scoreManager.UpdateScoreGameover();
 		}
 	}
+    public void Store()
+    {
+        panelStore.SetActive(true);
+        //store.onClick.RemoveAllListeners();
+        //store.onClick.AddListener(OpenStore);
+    }
+
+    void OpenStore()
+    {
+        
+    }
 }

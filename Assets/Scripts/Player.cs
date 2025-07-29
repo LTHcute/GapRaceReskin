@@ -14,18 +14,27 @@ public class Player : MonoBehaviour
 	{
 		if (GameManager.Instance.uIManager.gameState == GameState.PLAYING && collision.gameObject.CompareTag("Obstacle"))
 		{
-			if (collision.gameObject.GetComponent<SpriteRenderer>().color == base.gameObject.GetComponent<SpriteRenderer>().color)
-			{
-				UnityEngine.Object.Destroy(collision.gameObject);
-				GameManager.Instance.OpenSides();
-				ScoreManager.Instance.UpdateScore(1);
-				AudioManager.Instance.PlayEffects(AudioManager.Instance.sameColor);
-			}
-			else
-			{
-				AudioManager.Instance.PlayEffects(AudioManager.Instance.wrongColor);
-				GameManager.Instance.GameOver();
-			}
-		}
+            AudioManager.Instance.PlayEffects(AudioManager.Instance.wrongColor);
+            GameManager.Instance.GameOver();
+            //if (collision.gameObject.GetComponent<SpriteRenderer>().color == base.gameObject.GetComponent<SpriteRenderer>().color)
+            //{
+            //	UnityEngine.Object.Destroy(collision.gameObject);
+            //	//GameManager.Instance.OpenSides();
+            //	ScoreManager.Instance.UpdateScore(1);
+            //	AudioManager.Instance.PlayEffects(AudioManager.Instance.sameColor);
+            //}
+            //else
+            //{
+            //	AudioManager.Instance.PlayEffects(AudioManager.Instance.wrongColor);
+            //	GameManager.Instance.GameOver();
+            //}
+        }
+        if (GameManager.Instance.uIManager.gameState == GameState.PLAYING && collision.gameObject.CompareTag("Player"))
+		{
+            UnityEngine.Object.Destroy(collision.gameObject);
+            //GameManager.Instance.OpenSides();
+            ScoreManager.Instance.UpdateScore(1);
+            AudioManager.Instance.PlayEffects(AudioManager.Instance.sameColor);
+        }	
 	}
 }

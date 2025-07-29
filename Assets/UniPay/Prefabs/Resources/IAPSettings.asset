@@ -1,0 +1,891 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb640e96c617068419707c87fc4ddd44, type: 3}
+  m_Name: IAPSettings
+  m_EditorClassIdentifier: 
+  categoryList:
+  - referenceID: 58726fbc-597c-4a37-a048-8e470e3360e3
+    ID: revive
+    storeIDs: []
+  currencyList:
+  - referenceID: 827b45c4-1769-49a4-ab00-3d8ca48ecf67
+    ID: revive
+    baseAmount: 3
+    maxAmount: 0
+    icon: {fileID: 21300000, guid: 132ac2f03205b25459c69b2f9fef7fb3, type: 3}
+  productList:
+  - referenceID: 32637aff-36e7-451f-bded-dc8e6f6ed242
+    ID: product_item_1
+    storeIDs: []
+    category:
+      rid: 8604102457900662838
+    type: 0
+    title: Revive x2
+    description: Includes x2 Revives
+    discount: 0
+    fetch: 1
+    icon: {fileID: 21300000, guid: 132ac2f03205b25459c69b2f9fef7fb3, type: 3}
+    priceList:
+    - type: 0
+      currency:
+        rid: -2
+      product:
+        rid: -2
+      amount: 0
+      realPrice: 0.19$
+    rewardList:
+    - type: 1
+      currency:
+        rid: 8604102457900662839
+      product:
+        rid: -2
+      amount: 2
+      realPrice: 
+    requirement:
+      pairs: []
+      label: 
+    nextUpgrade:
+      rid: -2
+  - referenceID: c9427a34-fed6-4c8f-a2d2-37948d0fedd8
+    ID: product_item_2
+    storeIDs: []
+    category:
+      rid: 8604102457900662842
+    type: 0
+    title: Revive x4
+    description: Includes x4 Revives
+    discount: 0
+    fetch: 1
+    icon: {fileID: 21300000, guid: 132ac2f03205b25459c69b2f9fef7fb3, type: 3}
+    priceList:
+    - type: 0
+      currency:
+        rid: -2
+      product:
+        rid: -2
+      amount: 0
+      realPrice: 0.29$
+    rewardList:
+    - type: 1
+      currency:
+        rid: 8604102457900662843
+      product:
+        rid: -2
+      amount: 4
+      realPrice: 
+    requirement:
+      pairs: []
+      label: 
+    nextUpgrade:
+      rid: -2
+  - referenceID: eed92fa5-efec-4b22-9399-1cb2da19c863
+    ID: product_item_3
+    storeIDs: []
+    category:
+      rid: 8604102457900662842
+    type: 0
+    title: Revive x6
+    description: Includes x6 Revives
+    discount: 0
+    fetch: 1
+    icon: {fileID: 21300000, guid: 132ac2f03205b25459c69b2f9fef7fb3, type: 3}
+    priceList:
+    - type: 0
+      currency:
+        rid: -2
+      product:
+        rid: -2
+      amount: 0
+      realPrice: 0.49$
+    rewardList:
+    - type: 1
+      currency:
+        rid: 8604102457900662843
+      product:
+        rid: -2
+      amount: 6
+      realPrice: 
+    requirement:
+      pairs: []
+      label: 
+    nextUpgrade:
+      rid: -2
+  - referenceID: 5149e2be-100f-455e-a6f0-268773110ae0
+    ID: product_item_4
+    storeIDs: []
+    category:
+      rid: 8604102457900662842
+    type: 0
+    title: Revive x8
+    description: Includes x8 Revives
+    discount: 0
+    fetch: 1
+    icon: {fileID: 21300000, guid: 132ac2f03205b25459c69b2f9fef7fb3, type: 3}
+    priceList:
+    - type: 0
+      currency:
+        rid: -2
+      product:
+        rid: -2
+      amount: 0
+      realPrice: 0.99$
+    rewardList:
+    - type: 1
+      currency:
+        rid: 8604102457900662843
+      product:
+        rid: -2
+      amount: 8
+      realPrice: 
+    requirement:
+      pairs: []
+      label: 
+    nextUpgrade:
+      rid: -2
+  - referenceID: 2c3da5ad-5bee-4fe0-89b3-ef56740a0c85
+    ID: product_item_5
+    storeIDs: []
+    category:
+      rid: 8604102457900662842
+    type: 0
+    title: Revive x10
+    description: Includes x10 Revives
+    discount: 0
+    fetch: 1
+    icon: {fileID: 21300000, guid: 132ac2f03205b25459c69b2f9fef7fb3, type: 3}
+    priceList:
+    - type: 0
+      currency:
+        rid: -2
+      product:
+        rid: -2
+      amount: 0
+      realPrice: 1.99$
+    rewardList:
+    - type: 1
+      currency:
+        rid: 8604102457900662843
+      product:
+        rid: -2
+      amount: 10
+      realPrice: 
+    requirement:
+      pairs: []
+      label: 
+    nextUpgrade:
+      rid: -2
+  - referenceID: 7a317794-b5c0-420d-8a78-89f0a4b78b31
+    ID: product_item_6
+    storeIDs: []
+    category:
+      rid: 8604102457900662842
+    type: 0
+    title: Revive x12
+    description: Includes x12 Revives
+    discount: 0
+    fetch: 1
+    icon: {fileID: 21300000, guid: 132ac2f03205b25459c69b2f9fef7fb3, type: 3}
+    priceList:
+    - type: 0
+      currency:
+        rid: -2
+      product:
+        rid: -2
+      amount: 0
+      realPrice: 4.99$
+    rewardList:
+    - type: 1
+      currency:
+        rid: 8604102457900662843
+      product:
+        rid: -2
+      amount: 12
+      realPrice: 
+    requirement:
+      pairs: []
+      label: 
+    nextUpgrade:
+      rid: -2
+  - referenceID: 08672f9c-9833-46cd-96ca-0dd2f628d589
+    ID: product_item_7
+    storeIDs: []
+    category:
+      rid: 8604102457900662842
+    type: 0
+    title: Revive x14
+    description: Includes x14 Revives
+    discount: 0
+    fetch: 1
+    icon: {fileID: 21300000, guid: 132ac2f03205b25459c69b2f9fef7fb3, type: 3}
+    priceList:
+    - type: 0
+      currency:
+        rid: -2
+      product:
+        rid: -2
+      amount: 0
+      realPrice: 7.99$
+    rewardList:
+    - type: 1
+      currency:
+        rid: 8604102457900662843
+      product:
+        rid: -2
+      amount: 14
+      realPrice: 
+    requirement:
+      pairs: []
+      label: 
+    nextUpgrade:
+      rid: -2
+  - referenceID: 637400d6-ee76-47ea-bb76-b147f8715d53
+    ID: product_item_8
+    storeIDs: []
+    category:
+      rid: 8604102457900662842
+    type: 0
+    title: Revive x16
+    description: Includes x16 Revives
+    discount: 0
+    fetch: 1
+    icon: {fileID: 21300000, guid: 132ac2f03205b25459c69b2f9fef7fb3, type: 3}
+    priceList:
+    - type: 0
+      currency:
+        rid: -2
+      product:
+        rid: -2
+      amount: 0
+      realPrice: 9.99$
+    rewardList:
+    - type: 1
+      currency:
+        rid: 8604102457900662843
+      product:
+        rid: -2
+      amount: 16
+      realPrice: 
+    requirement:
+      pairs: []
+      label: 
+    nextUpgrade:
+      rid: -2
+  - referenceID: 4a3a85e0-5622-4fb4-8469-f9fadde8e670
+    ID: sub_pack_1
+    storeIDs: []
+    category:
+      rid: 8604102457900662842
+    type: 2
+    title: Subscription pack 1
+    description: Includes x2 Revives
+    discount: 0
+    fetch: 1
+    icon: {fileID: 21300000, guid: 132ac2f03205b25459c69b2f9fef7fb3, type: 3}
+    priceList:
+    - type: 0
+      currency:
+        rid: -2
+      product:
+        rid: -2
+      amount: 0
+      realPrice: 1.99$
+    rewardList:
+    - type: 2
+      currency:
+        rid: -2
+      product:
+        rid: 8604102457900662844
+      amount: 1
+      realPrice: 
+    - type: 1
+      currency:
+        rid: 8604102457900662843
+      product:
+        rid: -2
+      amount: 2
+      realPrice: 
+    requirement:
+      pairs: []
+      label: 
+    nextUpgrade:
+      rid: -2
+  - referenceID: e57f358c-bb0a-43cf-853a-e1953233e4a9
+    ID: sub_pack_2
+    storeIDs: []
+    category:
+      rid: 8604102457900662842
+    type: 2
+    title: Subscription pack 2
+    description: Includes x3 Revives
+    discount: 0
+    fetch: 1
+    icon: {fileID: 21300000, guid: 132ac2f03205b25459c69b2f9fef7fb3, type: 3}
+    priceList:
+    - type: 0
+      currency:
+        rid: -2
+      product:
+        rid: -2
+      amount: 0
+      realPrice: 2.99$
+    rewardList:
+    - type: 2
+      currency:
+        rid: -2
+      product:
+        rid: 8604102457900662845
+      amount: 1
+      realPrice: 
+    - type: 1
+      currency:
+        rid: 8604102457900662843
+      product:
+        rid: -2
+      amount: 3
+      realPrice: 
+    requirement:
+      pairs: []
+      label: 
+    nextUpgrade:
+      rid: -2
+  - referenceID: 256709ec-e006-4445-98e5-822ab8394f8a
+    ID: sub_pack_3
+    storeIDs: []
+    category:
+      rid: 8604102457900662842
+    type: 2
+    title: Subscription pack 3
+    description: Includes x4 Revives
+    discount: 0
+    fetch: 1
+    icon: {fileID: 21300000, guid: 132ac2f03205b25459c69b2f9fef7fb3, type: 3}
+    priceList:
+    - type: 0
+      currency:
+        rid: -2
+      product:
+        rid: -2
+      amount: 0
+      realPrice: 4.99$
+    rewardList:
+    - type: 2
+      currency:
+        rid: -2
+      product:
+        rid: 8604102457900662846
+      amount: 1
+      realPrice: 
+    - type: 1
+      currency:
+        rid: 8604102457900662843
+      product:
+        rid: -2
+      amount: 4
+      realPrice: 
+    requirement:
+      pairs: []
+      label: 
+    nextUpgrade:
+      rid: -2
+  - referenceID: 42b280df-4792-4f14-b078-797f8b8faa21
+    ID: sub_pack_4
+    storeIDs: []
+    category:
+      rid: 8604102457900662842
+    type: 2
+    title: Subscription pack 4
+    description: Includes x5 Revives
+    discount: 0
+    fetch: 1
+    icon: {fileID: 21300000, guid: 132ac2f03205b25459c69b2f9fef7fb3, type: 3}
+    priceList:
+    - type: 0
+      currency:
+        rid: -2
+      product:
+        rid: -2
+      amount: 0
+      realPrice: 7.99$
+    rewardList:
+    - type: 2
+      currency:
+        rid: -2
+      product:
+        rid: 8604102457900662847
+      amount: 1
+      realPrice: 
+    - type: 1
+      currency:
+        rid: 8604102457900662843
+      product:
+        rid: -2
+      amount: 5
+      realPrice: 
+    requirement:
+      pairs: []
+      label: 
+    nextUpgrade:
+      rid: -2
+  - referenceID: eea8621c-e710-41f8-a114-263d7e1f7625
+    ID: sub_pack_5
+    storeIDs: []
+    category:
+      rid: 8604102457900662842
+    type: 2
+    title: Subscription pack 5
+    description: Includes x6 Revives
+    discount: 0
+    fetch: 1
+    icon: {fileID: 21300000, guid: 132ac2f03205b25459c69b2f9fef7fb3, type: 3}
+    priceList:
+    - type: 0
+      currency:
+        rid: -2
+      product:
+        rid: -2
+      amount: 0
+      realPrice: 9.99$
+    rewardList:
+    - type: 2
+      currency:
+        rid: -2
+      product:
+        rid: 8604102457900662848
+      amount: 1
+      realPrice: 
+    - type: 1
+      currency:
+        rid: 8604102457900662843
+      product:
+        rid: -2
+      amount: 6
+      realPrice: 
+    requirement:
+      pairs: []
+      label: 
+    nextUpgrade:
+      rid: -2
+  - referenceID: 2eebdfdd-f44c-4908-bab7-6b90f49cdd7c
+    ID: sub_pack_6
+    storeIDs: []
+    category:
+      rid: 8604102457900662842
+    type: 2
+    title: Subscription pack 6
+    description: Includes x7 Revives
+    discount: 0
+    fetch: 1
+    icon: {fileID: 21300000, guid: 132ac2f03205b25459c69b2f9fef7fb3, type: 3}
+    priceList:
+    - type: 0
+      currency:
+        rid: -2
+      product:
+        rid: -2
+      amount: 0
+      realPrice: 14.99$
+    rewardList:
+    - type: 2
+      currency:
+        rid: -2
+      product:
+        rid: 8604102457900662849
+      amount: 1
+      realPrice: 
+    - type: 1
+      currency:
+        rid: 8604102457900662843
+      product:
+        rid: -2
+      amount: 7
+      realPrice: 
+    requirement:
+      pairs: []
+      label: 
+    nextUpgrade:
+      rid: -2
+  - referenceID: bd0e2f8f-99b3-4dcd-b62d-e3dc9cb0e1b0
+    ID: sub_pack_7
+    storeIDs: []
+    category:
+      rid: 8604102457900662842
+    type: 2
+    title: Subscription pack 7
+    description: Includes x8 Revives
+    discount: 0
+    fetch: 1
+    icon: {fileID: 21300000, guid: 132ac2f03205b25459c69b2f9fef7fb3, type: 3}
+    priceList:
+    - type: 0
+      currency:
+        rid: -2
+      product:
+        rid: -2
+      amount: 0
+      realPrice: 19.99$
+    rewardList:
+    - type: 2
+      currency:
+        rid: -2
+      product:
+        rid: 8604102457900662850
+      amount: 1
+      realPrice: 
+    - type: 1
+      currency:
+        rid: 8604102457900662843
+      product:
+        rid: -2
+      amount: 8
+      realPrice: 
+    requirement:
+      pairs: []
+      label: 
+    nextUpgrade:
+      rid: -2
+  customStoreConfig:
+    PayPal:
+      currencyCode: USD
+      sandbox:
+        clientID: 
+        secretKey: 
+      live:
+        clientID: 
+        secretKey: 
+      returnUrl: 
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 8604102457900662838
+      type: {class: IAPCategory, ns: UniPay, asm: Assembly-CSharp}
+      data:
+        referenceID: 58726fbc-597c-4a37-a048-8e470e3360e3
+        ID: revive
+        storeIDs: []
+    - rid: 8604102457900662839
+      type: {class: IAPCurrency, ns: UniPay, asm: Assembly-CSharp}
+      data:
+        referenceID: 827b45c4-1769-49a4-ab00-3d8ca48ecf67
+        ID: revive
+        baseAmount: 3
+        maxAmount: 0
+        icon: {fileID: 21300000, guid: 132ac2f03205b25459c69b2f9fef7fb3, type: 3}
+    - rid: 8604102457900662842
+      type: {class: IAPCategory, ns: UniPay, asm: Assembly-CSharp}
+      data:
+        referenceID: 58726fbc-597c-4a37-a048-8e470e3360e3
+        ID: revive
+        storeIDs: []
+    - rid: 8604102457900662843
+      type: {class: IAPCurrency, ns: UniPay, asm: Assembly-CSharp}
+      data:
+        referenceID: 827b45c4-1769-49a4-ab00-3d8ca48ecf67
+        ID: revive
+        baseAmount: 3
+        maxAmount: 0
+        icon: {fileID: 21300000, guid: 132ac2f03205b25459c69b2f9fef7fb3, type: 3}
+    - rid: 8604102457900662844
+      type: {class: IAPProduct, ns: UniPay, asm: Assembly-CSharp}
+      data:
+        referenceID: 4a3a85e0-5622-4fb4-8469-f9fadde8e670
+        ID: sub_pack_1
+        storeIDs: []
+        category:
+          rid: 8604102457900662842
+        type: 2
+        title: Subscription pack 1
+        description: Includes x2 Revives
+        discount: 0
+        fetch: 1
+        icon: {fileID: 21300000, guid: 132ac2f03205b25459c69b2f9fef7fb3, type: 3}
+        priceList:
+        - type: 0
+          currency:
+            rid: -2
+          product:
+            rid: -2
+          amount: 0
+          realPrice: 1.99$
+        rewardList:
+        - type: 2
+          currency:
+            rid: -2
+          product:
+            rid: 8604102457900662844
+          amount: 1
+          realPrice: 
+        - type: 1
+          currency:
+            rid: 8604102457900662843
+          product:
+            rid: -2
+          amount: 2
+          realPrice: 
+        requirement:
+          pairs: []
+          label: 
+        nextUpgrade:
+          rid: -2
+    - rid: 8604102457900662845
+      type: {class: IAPProduct, ns: UniPay, asm: Assembly-CSharp}
+      data:
+        referenceID: e57f358c-bb0a-43cf-853a-e1953233e4a9
+        ID: sub_pack_2
+        storeIDs: []
+        category:
+          rid: 8604102457900662842
+        type: 2
+        title: Subscription pack 2
+        description: Includes x3 Revives
+        discount: 0
+        fetch: 1
+        icon: {fileID: 21300000, guid: 132ac2f03205b25459c69b2f9fef7fb3, type: 3}
+        priceList:
+        - type: 0
+          currency:
+            rid: -2
+          product:
+            rid: -2
+          amount: 0
+          realPrice: 2.99$
+        rewardList:
+        - type: 2
+          currency:
+            rid: -2
+          product:
+            rid: 8604102457900662845
+          amount: 1
+          realPrice: 
+        - type: 1
+          currency:
+            rid: 8604102457900662843
+          product:
+            rid: -2
+          amount: 3
+          realPrice: 
+        requirement:
+          pairs: []
+          label: 
+        nextUpgrade:
+          rid: -2
+    - rid: 8604102457900662846
+      type: {class: IAPProduct, ns: UniPay, asm: Assembly-CSharp}
+      data:
+        referenceID: 256709ec-e006-4445-98e5-822ab8394f8a
+        ID: sub_pack_3
+        storeIDs: []
+        category:
+          rid: 8604102457900662842
+        type: 2
+        title: Subscription pack 3
+        description: Includes x4 Revives
+        discount: 0
+        fetch: 1
+        icon: {fileID: 21300000, guid: 132ac2f03205b25459c69b2f9fef7fb3, type: 3}
+        priceList:
+        - type: 0
+          currency:
+            rid: -2
+          product:
+            rid: -2
+          amount: 0
+          realPrice: 4.99$
+        rewardList:
+        - type: 2
+          currency:
+            rid: -2
+          product:
+            rid: 8604102457900662846
+          amount: 1
+          realPrice: 
+        - type: 1
+          currency:
+            rid: 8604102457900662843
+          product:
+            rid: -2
+          amount: 4
+          realPrice: 
+        requirement:
+          pairs: []
+          label: 
+        nextUpgrade:
+          rid: -2
+    - rid: 8604102457900662847
+      type: {class: IAPProduct, ns: UniPay, asm: Assembly-CSharp}
+      data:
+        referenceID: 42b280df-4792-4f14-b078-797f8b8faa21
+        ID: sub_pack_4
+        storeIDs: []
+        category:
+          rid: 8604102457900662842
+        type: 2
+        title: Subscription pack 4
+        description: Includes x5 Revives
+        discount: 0
+        fetch: 1
+        icon: {fileID: 21300000, guid: 132ac2f03205b25459c69b2f9fef7fb3, type: 3}
+        priceList:
+        - type: 0
+          currency:
+            rid: -2
+          product:
+            rid: -2
+          amount: 0
+          realPrice: 7.99$
+        rewardList:
+        - type: 2
+          currency:
+            rid: -2
+          product:
+            rid: 8604102457900662847
+          amount: 1
+          realPrice: 
+        - type: 1
+          currency:
+            rid: 8604102457900662843
+          product:
+            rid: -2
+          amount: 5
+          realPrice: 
+        requirement:
+          pairs: []
+          label: 
+        nextUpgrade:
+          rid: -2
+    - rid: 8604102457900662848
+      type: {class: IAPProduct, ns: UniPay, asm: Assembly-CSharp}
+      data:
+        referenceID: eea8621c-e710-41f8-a114-263d7e1f7625
+        ID: sub_pack_5
+        storeIDs: []
+        category:
+          rid: 8604102457900662842
+        type: 2
+        title: Subscription pack 5
+        description: Includes x6 Revives
+        discount: 0
+        fetch: 1
+        icon: {fileID: 21300000, guid: 132ac2f03205b25459c69b2f9fef7fb3, type: 3}
+        priceList:
+        - type: 0
+          currency:
+            rid: -2
+          product:
+            rid: -2
+          amount: 0
+          realPrice: 9.99$
+        rewardList:
+        - type: 2
+          currency:
+            rid: -2
+          product:
+            rid: 8604102457900662848
+          amount: 1
+          realPrice: 
+        - type: 1
+          currency:
+            rid: 8604102457900662843
+          product:
+            rid: -2
+          amount: 6
+          realPrice: 
+        requirement:
+          pairs: []
+          label: 
+        nextUpgrade:
+          rid: -2
+    - rid: 8604102457900662849
+      type: {class: IAPProduct, ns: UniPay, asm: Assembly-CSharp}
+      data:
+        referenceID: 2eebdfdd-f44c-4908-bab7-6b90f49cdd7c
+        ID: sub_pack_6
+        storeIDs: []
+        category:
+          rid: 8604102457900662842
+        type: 2
+        title: Subscription pack 6
+        description: Includes x7 Revives
+        discount: 0
+        fetch: 1
+        icon: {fileID: 21300000, guid: 132ac2f03205b25459c69b2f9fef7fb3, type: 3}
+        priceList:
+        - type: 0
+          currency:
+            rid: -2
+          product:
+            rid: -2
+          amount: 0
+          realPrice: 14.99$
+        rewardList:
+        - type: 2
+          currency:
+            rid: -2
+          product:
+            rid: 8604102457900662849
+          amount: 1
+          realPrice: 
+        - type: 1
+          currency:
+            rid: 8604102457900662843
+          product:
+            rid: -2
+          amount: 7
+          realPrice: 
+        requirement:
+          pairs: []
+          label: 
+        nextUpgrade:
+          rid: -2
+    - rid: 8604102457900662850
+      type: {class: IAPProduct, ns: UniPay, asm: Assembly-CSharp}
+      data:
+        referenceID: bd0e2f8f-99b3-4dcd-b62d-e3dc9cb0e1b0
+        ID: sub_pack_7
+        storeIDs: []
+        category:
+          rid: 8604102457900662842
+        type: 2
+        title: Subscription pack 7
+        description: Includes x8 Revives
+        discount: 0
+        fetch: 1
+        icon: {fileID: 21300000, guid: 132ac2f03205b25459c69b2f9fef7fb3, type: 3}
+        priceList:
+        - type: 0
+          currency:
+            rid: -2
+          product:
+            rid: -2
+          amount: 0
+          realPrice: 19.99$
+        rewardList:
+        - type: 2
+          currency:
+            rid: -2
+          product:
+            rid: 8604102457900662850
+          amount: 1
+          realPrice: 
+        - type: 1
+          currency:
+            rid: 8604102457900662843
+          product:
+            rid: -2
+          amount: 8
+          realPrice: 
+        requirement:
+          pairs: []
+          label: 
+        nextUpgrade:
+          rid: -2

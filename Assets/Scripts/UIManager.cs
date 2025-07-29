@@ -9,6 +9,7 @@ public class UIManager : MonoBehaviour
 	public GameObject mainMenuGui;
 	public Button play;
 	public Button store;
+	public GameObject panelStore;
 	public GameObject pauseGui;
 
 	public GameObject gameplayGui;
@@ -22,13 +23,16 @@ public class UIManager : MonoBehaviour
 	private void Start()
 	{
 		Debug.Log("UIManager");
-		mainMenuGui.SetActive(value: true);
+		Store();
+
+        mainMenuGui.SetActive(value: true);
 	
 		play.onClick.AddListener(()=> ShowGameplay());
 		pauseGui.SetActive(value: false);
 		gameplayGui.SetActive(value: false);
 		gameOverGui.SetActive(value: false);
 		gameState = GameState.MENU;
+
 	}
 
 	private void Update()
@@ -46,6 +50,17 @@ public class UIManager : MonoBehaviour
 		//	clicked = false;
 		//}
 	}
+
+	void Store()
+	{
+		store.onClick.RemoveAllListeners();
+		store.onClick.AddListener(OpenStore);
+	}	
+
+	void OpenStore()
+	{
+		panelStore.SetActive(true);
+	}	
 
 	public void ShowMainMenu()
 	{
