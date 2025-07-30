@@ -255,7 +255,8 @@ public class GameManager : MonoBehaviour
         {
             Time.timeScale = 1f;
         }
-		ShowPlayer();
+        ClearScene();
+        ShowPlayer();
         spawning = true;
         uIManager.ShowGameplay();
         StartCoroutine(SpawnObstacle(delayBetweenObstacles));
@@ -327,8 +328,5 @@ public class GameManager : MonoBehaviour
         //store.onClick.AddListener(OpenStore);
     }
 
-    void OpenStore()
-    {
-        
-    }
+
 }
